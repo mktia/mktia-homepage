@@ -1,0 +1,111 @@
+{
+  "home": {
+    "sentences": [
+      "「成果を出し続ける日々でありたい。」",
+      "最初にそう思ったのはいつであっただろうか。",
+      "そう考えたときから、成果を積み重ねることができているのだろうか。",
+      "十分なお金もなく、強いハングリー精神によって突き動かされるがままに記事を書き綴っていた大学一年生の夏を思い出す。",
+      "記事のネタも書く気力も底が見え始め、アマチュアライターからたまごウェブプログラマーに転生した二年生の夏を思い出す。",
+      "とある事件によってウェブアプリの可能性が潰え、たまごネイティブアプリデベロッパーになろうと決心した三年生の春を思い出す。",
+      "ここにおける成果とは何だったのだろうか。",
+      "他人からの評価なのだろうか、あるいはサービス提供による利益獲得なのだろうか。",
+      "得体のしれない成果とやらを果たして生み出してきたのだろうか。",
+      "残念なことに、これまで開発してきた中で自信をもって紹介できる、私の全てをかけてクオリティを担保できるプロダクトは存在しない。",
+      "だからこそ成果という言葉に囚われているのかもしれない。",
+      "結局のところ、私が成果と考えていたのは自己肯定と自己満足の渇きを潤すものなのだろう。",
+      "　",
+      "ところで、なぜこのようなどこか痛々しい駄文を綴っているのか。",
+      "それはトップページを作ったものの内容が思いつかなかったからである。"
+    ]
+  },
+  "profile": {
+    "introduction": [
+      "はじめはブログサービスで記事を書いていただけでしたが、自分でサービスを作ってあわよくばお金になったら面白いなと思っているうちに、ひよこエンジニアになっていました。",
+      "最近はブロックチェーンに興味があります。"
+    ],
+    "dev": {
+      "language": ["Python", "JavaScript", "TypeScript", "Java"],
+      "markup": ["HTML", "CSS", "Sass", "Pug"],
+      "framework": ["Vue.js", "Nuxt.js", "React Native"],
+      "blockchain": ["Solidity"]
+    },
+    "sns": {
+      "GitHub": "https://github.com/mktia",
+      "Twitter": "https://twitter.com/_mktia"
+    }
+  },
+  "website": [
+    {
+      "name": "MKTIAの備忘録",
+      "type": "Blog",
+      "image": "blog.jpg",
+      "description": "",
+      "url": "https://blog.mktia.com"
+    },
+    {
+      "name": "iTip",
+      "type": "Blog",
+      "image": "itip.jpg",
+      "description": "",
+      "url": "https://aita.info"
+    }
+  ],
+  "legacy": [
+    {
+      "name": "ENICY",
+      "type": "Android Application",
+      "image": "enicy.png",
+      "description": "Instagramアカウントを管理するAndroidアプリ",
+      "url": "https://github.com/mktia/enicy",
+      "coding": "Java"
+    },
+    {
+      "name": "ENICY for Instagram",
+      "type": "Web Application",
+      "image": "enicy-for-instagram.png",
+      "description": "Instagramアカウント管理アプリ",
+      "url": "https://github.com/mktia/enicy-for-instagram",
+      "coding": "Python"
+    },
+    {
+      "name": "InstaChecker",
+      "type": "Web Application",
+      "image": "ic.png",
+      "description": "Instagramアカウント管理アプリ",
+      "url": "https://github.com/mktia/instachecker",
+      "coding": "Python"
+    },
+    {
+      "name": "Postpic for Instagram",
+      "type": "Web Application",
+      "image": "postpic.png",
+      "description": "インスタグラムに写真を投稿するPC用クライアント",
+      "url": "https://github.com/mktia/postpic",
+      "coding": "Python"
+    },
+    {
+      "name": "Twilist",
+      "type": "Web Application",
+      "image": "twilist.jpg",
+      "description": "Twitterアカウント管理アプリ",
+      "url": "https://github.com/mktia/twilists",
+      "coding": "Python"
+    },
+    {
+      "name": "プライムビデオ配信終了まとめ",
+      "type": "Web Application",
+      "image": "prime-video.jpg",
+      "description": "配信が終了するプライムビデオのまとめサイト",
+      "url": "https://github.com/mktia/primevideo",
+      "coding": "Python"
+    },
+    {
+      "name": "mikutwi",
+      "type": "Web Application",
+      "image": "mikutwi.jpg",
+      "description": "Twitterアカウント管理アプリ",
+      "url": "https://github.com/mktia/mktia-twitter",
+      "coding": "Python"
+    }
+  ]
+}
