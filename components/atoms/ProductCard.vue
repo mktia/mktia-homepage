@@ -5,10 +5,10 @@
     :title="name"
     :sub-title="appType"
     style="max-width: 24rem;"
+    @click="openLink(link)"
   )
     b-card-text.small {{ description }}
-    p.mb-0.text-right
-      b-link.small.text-mono-a(:href="link") {{ link.slice(link.search('//')+2) }}
+    p.mb-0.text-right.small.text-mono-a {{ link.slice(link.search('//')+2) }}
 </template>
 
 <script lang="ts">
@@ -37,6 +37,13 @@ export default {
     link: {
       type: String,
       default: null
+    }
+  },
+  methods: {
+    openLink(url) {
+      if (process.browser) {
+        window.open(url)
+      }
     }
   }
 }
