@@ -29,7 +29,7 @@ html
   box-sizing: border-box
 
 body
-  background-color: #000
+  background-color: #fafafa
   font-family: 'Segoe UI', 'Noto Sans JP'
 
   .text-main
