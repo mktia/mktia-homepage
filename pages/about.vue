@@ -1,24 +1,30 @@
 <template lang="pug">
   div.container
-    h4.mt-4.mb-3.text-sub ABOUT ME
-    div.text-main
+    SectionTitleItem.mt-4.mb-2(jaJp="私はこんな人" enUs="About Me")
+    div.w-75.mx-auto.py-2
       p.text-justify(v-for="item in getIntroductionData()") {{ item }}
-    h4.mt-5.mb-3.text-sub SKILLSET
-    div.text-main
+    SectionTitleItem.mt-5.mb-2(jaJp="スキルセット" enUs="Skillset")
+    div.w-75.mx-auto.py-2
       p.mb-0(v-for="item in getDevData()") {{ item.join(' / ') }}
-    h4.mt-5.mb-3.text-sub SOCIAL
-    p.text-main(v-for="value, key in getSNSData()")
-      span.social-title {{ key }}
-      b-link.sns-link(:href="value") {{ value }}
+    SectionTitleItem.mt-5.mb-2(jaJp="各種アカウント" enUs="Social")
+    div.w-75.mx-auto.py-2
+      p(v-for="value, key in getSNSData()")
+        font-awesome-icon(:icon="['fab', key.toLowerCase()]")
+        span.social-title.ml-1 {{ key }}
+        b-link.sns-link(:href="value") {{ value }}
 </template>
 
 <script>
 import DATA from '~/static/data.json'
+import SectionTitleItem from '@/components/atoms/SectionTitleItem'
 
 export default {
   head: {
-    title: 'About | MKTIA.COM',
+    title: 'About | mktia is ...',
     meta: [{ hid: 'description', name: 'description', content: 'About page' }]
+  },
+  components: {
+    SectionTitleItem
   },
   methods: {
     getDevData() {
@@ -44,6 +50,8 @@ export default {
   border-bottom: dotted 1px #777
   color: #777
 
-  *:hover
+  &:hover
+    border-bottom: dotted 1px turquoise
+    color: turquoise
     text-decoration: none
 </style>

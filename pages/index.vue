@@ -1,20 +1,70 @@
 <template lang="pug">
-  div.container
-    div.mt-5
-      p.pb-1.title-mono-a Hello world!&#x1f424;
-    div.pt-4.pb-4
-      p.text-mono-5.text-justify(v-for="sentence in getTopSentences()") {{ sentence }}
+  div
+    div.py-4.source
+      div.container
+        span while(true) {
+        br
+        span.ml-2rem var isSuccess = challenge();
+        br
+        span.ml-2rem if(isSuccess) {
+        br
+        span.ml-4rem break;
+        br
+        span.ml-2rem }
+        br
+        span }
+        br
+        span goToNextStage();
+        transition(name="blink-transition")
+          span(v-show="isShow") _
+    div.container
+      SectionTitleItem.my-4(jaJp="言語" enUs="Language")
+      div.row
+        RankingItem.col-sm.mt-2.mb-4(
+          v-for="(language, index) in getLanguage()" 
+          :rank="index+1" 
+          :language="language" 
+          v-show="index < 3" 
+          key=`lang${index}`
+        )
+      div.pt-4.pb-4
+        p.text-mono-5.text-justify(v-for="sentence in getTopSentences()") {{ sentence }}
+      div.button.text-capitalize.mx-auto
+        nuxt-link.link.pl-2.py-3(to="/product")
+          span portfolio
+          RightArrowSVG.svg
 </template>
 
 <script>
-import DATA from '~/static/data.json'
+import RightArrowSVG from '@/assets/svg/right-arrow.svg'
+import RankingItem from '@/components/atoms/RankingItem'
+import SectionTitleItem from '@/components/atoms/SectionTitleItem'
+import DATA from '@/static/data.json'
 
 export default {
+  components: {
+    RankingItem,
+    RightArrowSVG,
+    SectionTitleItem
+  },
   head: {
-    title: 'MKTIA.COM',
+    title: 'mktia is ...',
     meta: [{ hid: 'description', name: 'description', content: 'Home page' }]
   },
+  data() {
+    return {
+      isShow: true
+    }
+  },
+  created() {
+    setInterval(() => {
+      this.isShow = !this.isShow
+    }, 500)
+  },
   methods: {
+    getLanguage() {
+      return DATA.profile.language
+    },
     getTopSentences() {
       return DATA.home.sentences
     }
@@ -22,4 +72,69 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped></style>
+<style lang="sass" scoped>
+.source
+  position: relative
+  background-color: #222
+  font-size: 1.5rem
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+  line-height: 31.5px
+  white-space: pre
+
+  *
+    color: turquoise
+
+  span
+    font-size: 87.5%
+
+  .ml-2rem
+    margin-left: 2rem
+
+  .ml-4rem
+    margin-left: 4rem
+
+  // .under-bar
+  //   position: relative
+  //   bottom: 36px
+  //   left: 216px
+
+.blink-transition-enter-active
+.blink-transition-leave-active
+  transition: all .2s ease
+
+.blink-transition-enter
+.blink-transition-leave-to
+  opacity: 0
+
+$main-color: #444
+$hover-color: turquoise
+.button
+  position: relative
+  border: solid 1px $main-color
+  font-family: Garamond
+  text-decoration: none
+  width: 192px
+
+  &:hover
+    border: solid 1px $hover-color
+
+    svg
+      fill: $hover-color
+
+  svg
+    position: absolute
+    top: 50% - 16
+    right: 8px
+    height: 16px
+    fill: $main-color
+
+  .link
+    display: block
+    color: $main-color
+    height: 100%
+    width: 100%
+
+    &:hover
+      color: $hover-color
+      text-decoration: none
+</style>

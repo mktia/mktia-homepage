@@ -1,7 +1,11 @@
 <template lang="pug">
   div.container
-    //- h2 PRODUCT
-    h2.mt-4.mb-3.text-sub WEBSITE
+    SectionTitleItem.mt-4.mb-2(jaJp="だいたいブログ" enUs="Website")
+    div.mb-5
+      p.text-center(
+        v-for="(sentence, index) in getWebsiteSentences()"
+        :key=`website-sentence-${index}`
+      ) {{ sentence }}
     b-card-group(
       columns
     )
@@ -15,8 +19,12 @@
         :appType="product.type"
         :link="product.url"
       )
-    h2.mt-5.mb-3.text-sub LEGACY
-    p.text-sub 犠牲となっていったアプリの数々
+    SectionTitleItem.mt-5.mb-3(jaJp="犠牲となったアプリ" enUs="Legacy")
+    div.mb-5
+      p.text-center(
+        v-for="(sentence, index) in getLegacySentences()"
+        :key=`legacy-sentence-${index}`
+      ) {{ sentence }}
     b-card-group(
       columns
     )
@@ -34,20 +42,28 @@
 
 <script>
 import ProductCard from '~/components/atoms/ProductCard'
+import SectionTitleItem from '@/components/atoms/SectionTitleItem'
 
 import DATA from '~/static/data.json'
 
 export default {
   head: {
-    title: 'Portfolio | MKTIA.COM',
+    title: 'Portfolio | mktia is ...',
     meta: [
       { hid: 'description', name: 'description', content: 'Portfolio page' }
     ]
   },
   components: {
-    ProductCard
+    ProductCard,
+    SectionTitleItem
   },
   methods: {
+    getLegacySentences() {
+      return DATA.product.legacy.sentences
+    },
+    getWebsiteSentences() {
+      return DATA.product.website.sentences
+    },
     getWebSiteData() {
       return DATA.website
     },
