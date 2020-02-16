@@ -51,11 +51,11 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['~/assets/main.css'],
+  css: ['~/assets/main.css', '@fortawesome/fontawesome-svg-core/styles.css'],
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '~/plugins/ga.js', ssr: false }],
+  plugins: [{ src: '~/plugins/ga.js', ssr: false }, '~/plugins/fontawesome.js'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -68,7 +68,8 @@ export default {
    */
   modules: [
     // Doc: https://bootstrap-vue.js.org/docs/
-    'bootstrap-vue/nuxt'
+    'bootstrap-vue/nuxt',
+    'nuxt-svg-loader'
   ],
   /*
    ** Build configuration
