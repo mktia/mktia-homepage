@@ -4,6 +4,9 @@
   "description": "mktia&#39;s homepage",
   "author": "mktia",
   "private": true,
+  "engines": {
+    "node": "12.16"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -20,7 +23,8 @@
     "@fortawesome/vue-fontawesome": "^0.1.9",
     "bootstrap": "^4.4.1",
     "bootstrap-vue": "^2.2.2",
-    "nuxt": "^2.11.0"
+    "nuxt": "^2.11.0",
+    "nuxt-svg-loader": "^1.2.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",
@@ -32,7 +36,6 @@
     "eslint-plugin-nuxt": "^0.5.0",
     "eslint-plugin-prettier": "^3.1.2",
     "node-sass": "^4.13.1",
-    "nuxt-svg-loader": "^1.0.1",
     "prettier": "^1.19.1",
     "pug": "^2.0.4",
     "pug-plain-loader": "^1.0.0",
