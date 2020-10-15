@@ -1,14 +1,18 @@
 <template lang="pug">
-  b-card(
-    :img-src="imageURL"
-    :img-alt="null"
-    :title="name"
-    :sub-title="appType"
-    style="max-width: 24rem;"
-    @click="openLink(link)"
-  )
-    b-card-text.small {{ description }}
-    p.mb-0.text-right.small.text-mono-a {{ link.slice(link.search('//')+2) }}
+  .product-card
+    b-img-lazy.my-3(
+      fluid
+      blank-src="http://placehold.jp/600x400.png?text=NO IMAGE"
+      :src="imageURL"
+      :alt="name"
+    )
+
+    h3.h4.font-weight-light {{ name }}
+    p.small.text-mono-7
+      span.font-weight-bold {{ appType }}
+      span &#32;- {{ coding }}
+    p {{ description }}
+    b-link(:url='link').small.text-mono-a {{ link.split('//')[1] }}
 </template>
 
 <script lang="ts">
@@ -49,4 +53,13 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped></style>
+<style lang="sass" scoped>
+.app-type
+  ::before
+    content: ""
+    border-top: 1px solid #333
+
+.product-card
+  img
+    height: auto
+</style>
