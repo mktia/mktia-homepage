@@ -19,9 +19,11 @@ import DATA from '~/static/data.json'
 import SectionTitleItem from '@/components/atoms/SectionTitleItem'
 
 export default {
-  head: {
-    title: 'About | mktia is ...',
-    meta: [{ hid: 'description', name: 'description', content: 'About page' }]
+  head() {
+    return {
+      title: 'About | mktia is',
+      meta: [{ hid: 'description', name: 'description', content: 'About page' }]
+    }
   },
   components: {
     SectionTitleItem

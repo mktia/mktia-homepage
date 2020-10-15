@@ -47,11 +47,13 @@ import SectionTitleItem from '@/components/atoms/SectionTitleItem'
 import DATA from '~/static/data.json'
 
 export default {
-  head: {
-    title: 'Portfolio | mktia is ...',
-    meta: [
-      { hid: 'description', name: 'description', content: 'Portfolio page' }
-    ]
+  head() {
+    return {
+      title: 'Portfolio | mktia is',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Portfolio page' }
+      ]
+    }
   },
   components: {
     ProductCard,

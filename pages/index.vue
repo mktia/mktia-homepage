@@ -47,9 +47,11 @@ export default {
     RightArrowSVG,
     SectionTitleItem
   },
-  head: {
-    title: 'mktia is ...',
-    meta: [{ hid: 'description', name: 'description', content: 'Home page' }]
+  head() {
+    return {
+      title: 'mktia is',
+      meta: [{ hid: 'description', name: 'description', content: 'Home page' }]
+    }
   },
   data() {
     return {
