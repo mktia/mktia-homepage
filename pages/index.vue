@@ -14,13 +14,11 @@
         br
         span }
         br
-        span goToNextStage();
-        transition(name="blink-transition")
-          span(v-show="isShow") _
-    div.container
-      SectionTitleItem.my-4(jaJp="言語" enUs="Language")
-      div.row
-        RankingItem.col-sm.mt-2.mb-4(
+  .container.my-4.py-4
+    h2.mb-4 Hello world!!
+    p.text-mono-5.text-justify.ff-yg.fs-11(
+      v-for='sentence in getIntroduction()'
+    ) {{ sentence }}
           v-for="(language, index) in getLanguage()" 
           :rank="index+1" 
           :language="language" 
@@ -64,6 +62,9 @@ export default {
     }, 500)
   },
   methods: {
+    getIntroduction() {
+      return DATA.home.introduction
+    },
     getLanguage() {
       return DATA.profile.language
     },
