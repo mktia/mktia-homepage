@@ -1,36 +1,45 @@
 <template lang="pug">
-  div
-    div.py-4.source
-      div.container
-        span while(true) {
-        br
-        span.ml-2rem var isSuccess = challenge();
-        br
-        span.ml-2rem if(isSuccess) {
-        br
-        span.ml-4rem break;
-        br
-        span.ml-2rem }
-        br
-        span }
-        br
+div
+  .py-4.source
+    .container
+      span while (true) {
+      br
+      span.ml-2rem var isSuccess = challenge();
+      br
+      span.ml-2rem if (isSuccess) {
+      br
+      span.ml-4rem break;
+      br
+      span.ml-2rem }
+      br
+      span }
+      br
+      span nextStage();
+      transition(name='blink-transition')
+        span(v-show='isShow') _
   .container.my-4.py-4
     h2.mb-4 Hello world!!
     p.text-mono-5.text-justify.ff-yg.fs-11(
       v-for='sentence in getIntroduction()'
     ) {{ sentence }}
-          v-for="(language, index) in getLanguage()" 
-          :rank="index+1" 
-          :language="language" 
-          v-show="index < 3" 
-          key=`lang${index}`
-        )
-      div.pt-4.pb-4
-        p.text-mono-5.text-justify(v-for="sentence in getTopSentences()") {{ sentence }}
-      div.button.text-capitalize.mx-auto
-        nuxt-link.link.pl-2.py-3(to="/product")
-          span portfolio
-          RightArrowSVG.svg
+  .container
+    SectionTitleItem.my-4(jaJp='言語', enUs='Language')
+    .row
+      RankingItem.col-sm.mt-2.mb-4(
+        v-for='(language, index) in getLanguage()',
+        :rank='index + 1',
+        :language='language',
+        v-show='index < 3',
+        :key='"lang" + index'
+      )
+    .pt-4.pb-4
+      p.text-mono-5.text-justify.ff-yg.fs-11(
+        v-for='sentence in getLanguageSentences()'
+      ) {{ sentence }}
+    .button.text-capitalize.mx-auto
+      nuxt-link.link.pl-2.py-3(to='/product')
+        span portfolio
+        RightArrowSVG.svg
 </template>
 
 <script>
@@ -68,8 +77,8 @@ export default {
     getLanguage() {
       return DATA.profile.language
     },
-    getTopSentences() {
-      return DATA.home.sentences
+    getLanguageSentences() {
+      return DATA.home.languageSentences
     }
   }
 }
