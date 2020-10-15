@@ -1,8 +1,9 @@
 <template lang="pug">
-  div
-    Header
-    nuxt
-    Footer
+div
+  Header
+  nuxt
+  Footer
+  // Designed by mktia. (https://github.com/mktia)
 </template>
 
 <script>
@@ -30,7 +31,13 @@ html
 
 body
   background-color: #fafafa
-  font-family: 'Segoe UI', 'Noto Sans JP'
+  font-family: 'Optima', 'Segoe UI', 'Noto Sans JP', -apple-system BlinkMacSystemFont, sans-serif
+
+  .ff-yg
+    font-family: 'Optima', 'Segoe UI', 'Yu Gothic', 'YuGothic', -apple-system BlinkMacSystemFont, sans-serif
+
+  .fs-11
+    font-size: 1.1rem
 
   .text-main
     color: #aaa
@@ -43,6 +50,9 @@ body
 
   .text-mono-5
     color: #555
+
+  .text-mono-7
+    color: #777
 
   .text-justify
     text-align: justify
