@@ -1,17 +1,17 @@
 <template lang="pug">
-  div.container
-    SectionTitleItem.mt-4.mb-2(jaJp="私はこんな人" enUs="About Me")
-    div.w-75.mx-auto.py-2
-      p.text-justify(v-for="item in getIntroductionData()") {{ item }}
-    SectionTitleItem.mt-5.mb-2(jaJp="スキルセット" enUs="Skillset")
-    div.w-75.mx-auto.py-2
-      p.mb-0(v-for="item in getDevData()") {{ item.join(' / ') }}
-    SectionTitleItem.mt-5.mb-2(jaJp="各種アカウント" enUs="Social")
-    div.w-75.mx-auto.py-2
-      p(v-for="value, key in getSNSData()")
-        font-awesome-icon(:icon="['fab', key.toLowerCase()]")
-        span.social-title.ml-1 {{ key }}
-        b-link.sns-link(:href="value") {{ value }}
+.container
+  SectionTitleItem.mt-4.mb-2(jaJp='私はこんな人', enUs='About Me')
+  .w-75.mx-auto.py-2
+    p.text-justify(v-for='item in getIntroductionData()') {{ item }}
+  SectionTitleItem.mt-5.mb-2(jaJp='スキルセット', enUs='Skillset')
+  .w-75.mx-auto.py-2
+    p.text-justify.mb-0(v-for='item in getDevData()') {{ item.join(" / ") }}
+  SectionTitleItem.mt-5.mb-2(jaJp='各種アカウント', enUs='Social')
+  .w-75.mx-auto.py-2
+    p(v-for='(value, key) in getSNSData()').text-center.text-md-left
+      font-awesome-icon(:icon='["fab", key.toLowerCase()]')
+      span.mx-2 {{ key }}
+      b-link.sns-link(:href='value') {{ value.split('//')[1] }}
 </template>
 
 <script>
@@ -43,17 +43,12 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-.social-title
-  position: absolute
-
 .sns-link
-  position: relative
-  left: 64px
   border-bottom: dotted 1px #777
   color: #777
 
   &:hover
-    border-bottom: dotted 1px turquoise
+    border-bottom: none
     color: turquoise
     text-decoration: none
 </style>
