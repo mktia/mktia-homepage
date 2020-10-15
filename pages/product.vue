@@ -1,43 +1,39 @@
 <template lang="pug">
-  div.container
-    SectionTitleItem.mt-4.mb-2(jaJp="だいたいブログ" enUs="Website")
-    div.mb-5
-      p.text-center(
-        v-for="(sentence, index) in getWebsiteSentences()"
-        :key=`website-sentence-${index}`
-      ) {{ sentence }}
-    b-card-group(
-      columns
+.container
+  SectionTitleItem.mt-4.mb-2(jaJp='だいたいブログ', enUs='Web site')
+  .mb-5
+    p.text-center(
+      v-for='(sentence, index) in getWebsiteSentences()',
+      :key='"website-sentence-" + index'
+    ) {{ sentence }}
+  .product-group.row
+    product-card.col-sm-4.pb-3(
+      v-for='product in getWebSiteData()',
+      :key='product.name',
+      :name='product.name',
+      :description='product.description',
+      :imageURL='require(`~/static/product-image/${product.image}`)',
+      :coding='product.coding',
+      :appType='product.type',
+      :link='product.url'
     )
-      product-card(
-        v-for="product in getWebSiteData()"
-        :key="product.name"
-        :name="product.name"
-        :description="product.description"
-        :imageURL="require(`~/static/product-image/${product.image}`)"
-        :coding="product.coding"
-        :appType="product.type"
-        :link="product.url"
-      )
-    SectionTitleItem.mt-5.mb-3(jaJp="犠牲となったアプリ" enUs="Legacy")
-    div.mb-5
-      p.text-center(
-        v-for="(sentence, index) in getLegacySentences()"
-        :key=`legacy-sentence-${index}`
-      ) {{ sentence }}
-    b-card-group(
-      columns
+  SectionTitleItem.mt-5.mb-3(jaJp='犠牲となったアプリ', enUs='Legacy')
+  .mb-5
+    p.text-center(
+      v-for='(sentence, index) in getLegacySentences()',
+      :key='"legacy-sentence-" + index'
+    ) {{ sentence }}
+  .product-group.row
+    product-card.col-sm-4.pb-3(
+      v-for='product in getLegacyData()',
+      :key='product.name',
+      :name='product.name',
+      :description='product.description',
+      :imageURL='require(`~/static/product-image/${product.image}`)',
+      :coding='product.coding',
+      :appType='product.type',
+      :link='product.url'
     )
-      product-card(
-        v-for="product in getLegacyData()"
-        :key="product.name"
-        :name="product.name"
-        :description="product.description"
-        :imageURL="require(`~/static/product-image/${product.image}`)"
-        :coding="product.coding"
-        :appType="product.type"
-        :link="product.url"
-      )
 </template>
 
 <script>
@@ -76,4 +72,9 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped></style>
+<style lang="sass" scoped>
+.carousel-img
+  width: auto
+  height: 300px !important
+  max-height: 300px !important
+</style>
