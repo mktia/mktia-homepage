@@ -18,13 +18,11 @@
   },
   "product": {
     "website": {
-      "sentences": [
-        "ブログは息抜き程度に．"
-      ]
+      "sentences": ["ブログは息抜き程度に．"]
     },
     "legacy": {
       "sentences": [
-        "基本的に勉強しながら一人で開発・運営していたものが多いので荒削りなものばかりです．",
+        "基本的に勉強を兼ねて一人で開発・運営していたものが多いので荒削りなものばかりです．",
         "ロゴ作成とか UI/UX デザインとか，普通に難しいですね．デザイナーさんはすごい．"
       ]
     }
@@ -38,12 +36,7 @@
       "ブロックチェーンや機械学習に興味があるので，大学ではそれに関連した研究をしています．",
       "統計学は結構好きです（できるとは言ってない）．"
     ],
-    "language": [
-      "Python",
-      "JavaScript",
-      "Java",
-      "Ruby"
-    ],
+    "language": ["Python", "JavaScript", "Java", "Ruby"],
     "dev": {
       "language": [
         "Python",
@@ -53,30 +46,17 @@
         "Ruby",
         "Solidity?"
       ],
-      "markup": [
-        "HTML",
-        "CSS",
-        "Sass",
-        "Pug.js"
-      ],
+      "markup": ["HTML", "CSS", "Sass", "Pug.js"],
       "framework": [
         "Vue.js",
         "Nuxt.js",
         "React Native",
+        "Ruby on Rails",
         "Flask",
         "Bootstrap"
       ],
-      "os": [
-        "Windows",
-        "macOS",
-        "Ubuntu",
-        "CentOS"
-      ],
-      "ide": [
-        "VS Code",
-        "PyCharm",
-        "RubyMine"
-      ]
+      "os": ["Windows", "macOS", "Ubuntu", "CentOS"],
+      "ide": ["VS Code", "PyCharm", "RubyMine"]
     },
     "sns": {
       "GitHub": "https://github.com/mktia",
@@ -85,18 +65,20 @@
   },
   "website": [
     {
-      "name": "MKTIAの備忘録",
+      "name": "mktia's note",
       "type": "Blog",
-      "image": "blog.jpg",
+      "image": "blog.png",
       "description": "",
-      "url": "https://blog.mktia.com"
+      "url": "https://blog.mktia.com",
+      "coding": "WordPress / HTML / CSS"
     },
     {
       "name": "iTip",
       "type": "Blog",
       "image": "itip.jpg",
       "description": "",
-      "url": "https://aita.info"
+      "url": "https://aita.info",
+      "coding": "WordPress / HTML / CSS"
     }
   ],
   "legacy": [
@@ -105,7 +87,7 @@
       "type": "Android Application",
       "image": "enicy.png",
       "description": "Instagramアカウントを管理するAndroidアプリ",
-      "url": "https://github.com/mktia/enicy",
+      "url": "https://enicy.mktia.com",
       "coding": "Java"
     },
     {
@@ -114,7 +96,7 @@
       "image": "enicy-for-instagram.png",
       "description": "Instagramアカウント管理アプリ",
       "url": "https://github.com/mktia/enicy-for-instagram",
-      "coding": "Python"
+      "coding": "Python / Flask / HTML / CSS"
     },
     {
       "name": "InstaChecker",
@@ -122,7 +104,7 @@
       "image": "ic.png",
       "description": "Instagramアカウント管理アプリ",
       "url": "https://github.com/mktia/instachecker",
-      "coding": "Python"
+      "coding": "Python / Flask / HTML / CSS"
     },
     {
       "name": "Postpic for Instagram",
@@ -130,7 +112,7 @@
       "image": "postpic.png",
       "description": "インスタグラムに写真を投稿するPC用クライアント",
       "url": "https://github.com/mktia/postpic",
-      "coding": "Python"
+      "coding": "Python / Flask / HTML / CSS"
     },
     {
       "name": "Twilist",
@@ -138,7 +120,7 @@
       "image": "twilist.jpg",
       "description": "Twitterアカウント管理アプリ",
       "url": "https://github.com/mktia/twilists",
-      "coding": "Python"
+      "coding": "Python / Flask / HTML / CSS"
     },
     {
       "name": "プライムビデオ配信終了まとめ",
@@ -146,7 +128,7 @@
       "image": "prime-video.jpg",
       "description": "配信が終了するプライムビデオのまとめサイト",
       "url": "https://github.com/mktia/primevideo",
-      "coding": "Python"
+      "coding": "Python / Flask / HTML / CSS"
     },
     {
       "name": "mikutwi",
@@ -154,7 +136,17 @@
       "image": "mikutwi.jpg",
       "description": "Twitterアカウント管理アプリ",
       "url": "https://github.com/mktia/mktia-twitter",
-      "coding": "Python"
+      "coding": "Python / Flask / HTML / CSS"
+    }
+  ],
+  "other": [
+    {
+      "name": "ENICY",
+      "type": "Android Application",
+      "image": "enicy.png",
+      "description": "Instagramアカウントを管理するAndroidアプリ",
+      "url": "https://enicy.mktia.com",
+      "coding": "Java"
     }
   ]
 }
