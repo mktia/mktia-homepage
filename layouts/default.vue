@@ -31,10 +31,10 @@ html
 
 body
   background-color: #fafafa
-  font-family: 'Optima', 'Segoe UI', 'Noto Sans JP', -apple-system BlinkMacSystemFont, sans-serif
+  font-family: 'Optima', 'Marcellus', 'Segoe UI', 'Noto Sans JP', -apple-system BlinkMacSystemFont, sans-serif
 
   .ff-yg
-    font-family: 'Optima', 'Segoe UI', 'Yu Gothic', 'YuGothic', -apple-system BlinkMacSystemFont, sans-serif
+    font-family: 'Optima', 'Marcellus', 'Segoe UI', 'Yu Gothic', 'YuGothic', 'Noto Sans JP', -apple-system BlinkMacSystemFont, sans-serif
 
   .fs-11
     font-size: 1.1rem

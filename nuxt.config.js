@@ -37,11 +37,6 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap'
-      }
     ]
   },
   /*
@@ -69,7 +64,8 @@ export default {
   modules: [
     // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt',
-    'nuxt-svg-loader'
+    'nuxt-svg-loader',
+    'nuxt-webfontloader'
   ],
   /*
    ** Build configuration
@@ -79,5 +75,17 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
+  },
+  webfontloader: {
+    custom: {
+      families: [
+        'Noto Sans JP:n3,n4',
+        'Marcellus'
+      ],
+      urls:[
+        "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap",
+        "https://fonts.googleapis.com/css2?family=Marcellus&display=swap"
+      ]
+    }
   }
 }

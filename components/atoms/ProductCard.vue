@@ -7,7 +7,7 @@
       :alt="name"
     )
 
-    h3.h4.font-weight-light {{ name }}
+    h3.h4 {{ name }}
     p.small.text-mono-7
       span.font-weight-bold {{ appType }}
       span &#32;- {{ coding }}

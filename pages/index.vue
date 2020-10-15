@@ -127,7 +127,7 @@ $hover-color: turquoise
 .button
   position: relative
   border: solid 1px $main-color
-  font-family: Garamond
+  font-family: Optima, 'Marcellus', serif
   text-decoration: none
   width: 192px
 
