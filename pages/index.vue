@@ -73,10 +73,18 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+@use "sass:map"
+
+$breakpoints: ('sm': 'screen and (max-width: 420px)')
+
+@mixin mq($breakpoint)
+  @media #{map-get($breakpoints, $breakpoint)}
+    @content
+
 .source
   position: relative
   background-color: #222
-  font-size: 1.5rem
+  font-size: 1.4rem
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
   line-height: 31.5px
   white-space: pre
@@ -84,19 +92,15 @@ export default {
   *
     color: turquoise
 
-  span
-    font-size: 87.5%
-
   .ml-2rem
     margin-left: 2rem
 
   .ml-4rem
     margin-left: 4rem
 
-  // .under-bar
-  //   position: relative
-  //   bottom: 36px
-  //   left: 216px
+@include mq(sm)
+  .source
+    font-size: 1rem
 
 .blink-transition-enter-active
 .blink-transition-leave-active
