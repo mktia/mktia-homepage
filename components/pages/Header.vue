@@ -1,7 +1,7 @@
 <template lang="pug">
   header
     b-navbar.container(toggleable="lg", type="dark")
-      b-navbar-brand(href="/") mktia is ...
+      b-navbar-brand(href="/") mktia is
       b-navbar-toggle(target="nav-collapse")
       b-collapse(id="nav-collapse", is-nav)
         b-navbar-nav
