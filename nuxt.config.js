@@ -13,25 +13,17 @@ export default {
         name: 'description',
         content: process.env.npm_package_description || ''
       },
-      { name: 'twitter:card', content: 'summary' },
-      { name: 'twitter:site', content: '@_mktia' },
-      {
-        name: 'twitter:title',
-        content: 'MKTIA.COM'
-      },
-      {
-        name: 'twitter:description',
-        content: 'ひよこエンジニア / Python / JS / Blockchain'
-      },
-      { name: 'twitter:image', content: '/ogp.jpg' },
-      { property: 'og:type', content: 'website' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:site', content: '@mktia' },
+      { name: 'twitter:creator', content: '@mktia' },
+      { property: 'og:url', content: 'https://www.mktia.com' },
+      { property: 'og:title', content: 'mktia is' },
       {
         property: 'og:description',
         content: 'ひよこエンジニア / Python / JS / Blockchain'
       },
-      { property: 'og:title', content: 'MKTIA.COM' },
-      { property: 'og:url', content: 'https://www.mktia.com' },
-      { property: 'og:image', content: '/ogp.jpg' },
+      { property: 'og:image', content: 'https://www.mktia.com/ogp.jpg' },
+      { property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: 'MKTIA.COM' },
       { property: 'og:locale', content: 'ja_JP' }
     ],
