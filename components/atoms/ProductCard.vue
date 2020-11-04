@@ -12,7 +12,7 @@
       span.font-weight-bold {{ appType }}
       span &#32;- {{ coding }}
     p {{ description }}
-    b-link(:url='link').small.text-mono-a {{ link.split('//')[1] }}
+    b-link(:href='link').small.text-mono-a {{ link.split('//')[1] }}
 </template>
 
 <script lang="ts">
