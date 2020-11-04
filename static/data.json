@@ -65,6 +65,14 @@
   },
   "website": [
     {
+      "name": "OGP Generator",
+      "type": "Web Application",
+      "image": "ogp_mini.png",
+      "description": "Open Graphプロトコル自動生成アプリ",
+      "url": "https://ogp.mktia.com",
+      "coding": "JavaScript / Nuxt.js / Pug.js / Sass"
+    },
+    {
       "name": "mktia's note",
       "type": "Blog",
       "image": "blog.png",
