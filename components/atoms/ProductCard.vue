@@ -1,18 +1,18 @@
 <template lang="pug">
-  .product-card
-    b-img-lazy.my-3(
-      fluid
-      blank-src="http://placehold.jp/600x400.png?text=NO IMAGE"
-      :src="imageURL"
-      :alt="name"
-    )
+.product-card
+	b-img-lazy.my-3(
+		fluid,
+		:blank-src='require("@/static/no-image.png")',
+		:src='imageURL',
+		:alt='name'
+	)
 
-    h3.h4 {{ name }}
-    p.small.text-mono-7
-      span.font-weight-bold {{ appType }}
-      span &#32;- {{ coding }}
-    p {{ description }}
-    b-link(:href='link').small.text-mono-a {{ link.split('//')[1] }}
+	h3.h4 {{ name }}
+	p.small.text-mono-7
+		span.font-weight-bold {{ appType }}
+		span &#32;- {{ coding }}
+	p {{ description }}
+	b-link.small.text-mono-a(:href='link') {{ link.split("//")[1] }}
 </template>
 
 <script lang="ts">
@@ -44,11 +44,11 @@ export default {
     }
   },
   methods: {
-    openLink(url) {
-      if (process.browser) {
-        window.open(url)
-      }
-    }
+    // openLink(url) {
+    //   if (process.browser) {
+    //     window.open(url)
+    //   }
+    // }
   }
 }
 </script>
