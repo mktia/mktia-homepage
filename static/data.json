@@ -65,6 +65,14 @@
   },
   "website": [
     {
+      "name": "mktia's note",
+      "type": "Blog",
+      "image": "blog.png",
+      "description": "ノートのようなTechブログ",
+      "url": "https://blog.mktia.com",
+      "coding": "JavaScript / Nuxt.js / Pug.js / Sass"
+    },
+    {
       "name": "OGP Generator",
       "type": "Web Application",
       "image": "ogp_mini.png",
@@ -73,18 +81,10 @@
       "coding": "JavaScript / Nuxt.js / Pug.js / Sass"
     },
     {
-      "name": "mktia's note",
-      "type": "Blog",
-      "image": "blog.png",
-      "description": "",
-      "url": "https://blog.mktia.com",
-      "coding": "WordPress / HTML / CSS"
-    },
-    {
       "name": "iTip",
       "type": "Blog",
       "image": "itip.jpg",
-      "description": "",
+      "description": "更新停止",
       "url": "https://aita.info",
       "coding": "WordPress / HTML / CSS"
     }
