@@ -1,49 +1,50 @@
 {
   "home": {
     "introduction": [
-      "個人サイト欲しいなと思ったのと，いろんな技術試してみたいなというのがあったのでこのサイトを作りました．故に，書く内容が後回しになったので中身は薄いのですが，ご了承ください．",
-      "書くことがない上に個人サイトであるという性質上，自分語りが多めになることが予想されます．そういうのが苦手な方はそっとページを閉じてください．",
+      "個人サイト欲しいなと思ったのと，いろんな技術試してみたいというのがあったのでこのサイトを作っています．一応ポートフォリオサイトを想定していますが，書くことがあまりなく，デザインセンスも「…」という感じなのでご了承ください．",
       "　",
-      "ちなみに，当サイトは Nuxt.js (Pug.js, Sass 利用) + Bootstrap 製です．この間，マテリアルデザインを採用できる Vuetify を使ってみたのですが，Bootstrap より好みに近い感じだったのでちょっと悲しいです（尚，手直しするモチベはない模様）．",
-      "ホストには Zeit の Now 改め Vercel を利用しています．Firebase Hosting も使いやすくていい感じなのでおすすめです．"
+      "このサイトは Nuxt.js (Pug.js, Sass 利用) + BootstrapVue 製で，サーバは Zeit の Now 改め Vercel を利用しています．Firebase Hosting も使いやすくていい感じなのでおすすめです．"
     ],
     "languageSentences": [
-      "自己紹介の代わりにいつも使っている言語を軽く紹介します．",
-      "最も使用頻度の高い言語は Python です．研究で数値シミュレーションや機械学習に用いています．以前はウェブ開発にも使用していましたが，基本的にテンプレート言語と合わせて作る形式になるのでバインディングができないのが残念．",
-      "今は開発のほとんどが JS/TS になりつつあります，使用歴５年の Python に比べてまだ２年ほどしか使用していませんが，ウェブ開発もクロスプラットフォームなネイティブアプリ開発もこれ一つで実現できるので便利すぎてなかなか離れられません．",
-      "三番目以降はあまり優劣がありません．以前 Google Play ストアで公開していた Android アプリは Java で開発していました．どうしても冗長になるので，また個人で開発する機会があっても多分使いません（Kotlin なら…）．",
-      "他には機会に応じて少し触る程度に，インターンで Ruby on Rails を使ったり，ブロックチェーン開発に Solidity　とか Go を使ったりという感じです．",
-      "もう少し体系的に学びたいですね．"
+      "自己紹介の代わりに触れることの多い言語を軽く紹介します．",
+      "最も使用頻度の高い言語は Python です．最近人気なので使っている方多いと思います．特に，数値シミュレーションや機械学習に向いているので研究で触っていました．以前はウェブ開発でも使用していましたが，Flask や Django はフロントエンド実装が基本的にテンプレート言語 Jinja2 になるので変数をいい感じにバインディングできないため，ひっそりと姿を消しました．",
+      "今は開発のほとんどが JS/TS になりつつあります，Python に比べてまだ使用歴は短いですが，ウェブ開発もクロスプラットフォームなネイティブアプリ開発もこれ一つで実現できるのが便利すぎて離れられません．",
+      "その他の言語はほぼ優劣がありません．そんな高尚なものではありませんが，時々に応じて臨機応変に使い分けていました．Google Play ストアで公開していた Android アプリは Java，インターンでの開発では Ruby on Rails，ハッカソンでのブロックチェーン開発は Solidity や Go，Rust を使用していました．"
     ]
   },
   "product": {
     "website": {
-      "sentences": ["ブログは息抜き程度に．"]
+      "sentences": ["ブログとか何となく作ったサイトとか．"]
+    },
+    "products":{
+      "sentences": ["全然詳しくないけどハードウェアもちょっと触る．"]
     },
     "legacy": {
       "sentences": [
-        "基本的に勉強を兼ねて一人で開発・運営していたものが多いので荒削りなものばかりです．",
-        "ロゴ作成とか UI/UX デザインとか，普通に難しいですね．デザイナーさんはすごい．"
+        "基本的に勉強を兼ねて一人で開発・運営していたものが多いので荒削りなものばかり．",
+        "ロゴ作成とか UI/UX デザインとか，難しいですね．デザイナーさんはすごい．",
+        "個人開発だと気付かないくらいのセンスとスキルが欲しい．"
       ]
     }
   },
   "profile": {
     "introduction": [
-      "学費や交通費を払うためにバイトしていましたが，どう考えても時間が足りないのでブログを書き始めました．",
-      "デザインをいじるのが楽しくて HTML, CSS を触り始め，もっとやりたいことが出てきたのでプログラミングもするように．",
+      "バイト代で学費や交通費を払っていましたが，どう考えても時間が足りないと思いブログを始めました．",
+      "執筆よりもデザインをいじるのが楽しくて HTML, CSS を触り始め，プログラミングもするように．",
       "ちっちゃいプロダクトを作っては潰しを繰り返して，ひよこエンジニアになりました．",
       "少しだけスキルが身についたので，インターンや業務委託でも開発したり．",
-      "ブロックチェーンや機械学習に興味があるので，大学ではそれに関連した研究をしています．",
-      "統計学は結構好きです（できるとは言ってない）．"
+      "ブロックチェーンや機械学習に興味があるので，それに関連した研究をしていました．"
     ],
-    "language": ["Python", "JavaScript", "Java", "Ruby"],
+    "language": ["Python", "JavaScript", "Java", "Rust", "Ruby"],
     "dev": {
       "language": [
         "Python",
         "JavaScript",
         "TypeScript",
         "Java",
+        "Rust",
         "Ruby",
+        "Go",
         "Solidity?"
       ],
       "markup": ["HTML", "CSS", "Sass", "Pug.js"],
@@ -53,10 +54,11 @@
         "React Native",
         "Ruby on Rails",
         "Flask",
-        "Bootstrap"
+        "Bootstrap",
+        "Bulma"
       ],
-      "os": ["Windows", "macOS", "Ubuntu", "CentOS"],
-      "ide": ["VS Code", "PyCharm", "RubyMine"]
+      "os": ["Windows", "macOS", "Ubuntu", "Raspberry Pi OS", "CentOS"],
+      "ide": ["VS Code", "PyCharm", "RubyMine", "Eclipse"]
     },
     "sns": {
       "GitHub": "https://github.com/mktia",
@@ -70,6 +72,14 @@
       "image": "blog.png",
       "description": "ノートのようなTechブログ",
       "url": "https://blog.mktia.com",
+      "coding": "JavaScript / Nuxt.js / Pug.js / Sass"
+    },
+    {
+      "name": "Image Portfolio",
+      "type": "Web site",
+      "image": "image-portfolio.png",
+      "description": "写真のポートフォリオになるテストサイト",
+      "url": "https://gallery.mktia.com",
       "coding": "JavaScript / Nuxt.js / Pug.js / Sass"
     },
     {
@@ -87,6 +97,16 @@
       "description": "更新停止",
       "url": "https://aita.info",
       "coding": "WordPress / HTML / CSS"
+    }
+  ],
+  "products": [
+    {
+      "name": "E-calendar",
+      "type": "Goods",
+      "image": "e-calendar.png",
+      "description": "Googleカレンダーと連動する電子ペーパーの卓上カレンダー",
+      "url": "https://github.com/mktia/e-calendar",
+      "coding": "Python / Raspberry Pi"
     }
   ],
   "legacy": [

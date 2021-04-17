@@ -17,6 +17,23 @@
       :appType='product.type',
       :link='product.url'
     )
+  SectionTitleItem.mt-4.mb-2(jaJp='ハードウェア？開発', enUs='Product')
+  .mb-5
+    p.text-center(
+      v-for='(sentence, index) in getProductSentences()',
+      :key='"website-sentence-" + index'
+    ) {{ sentence }}
+  .product-group.row
+    product-card.col-sm-4.pb-3(
+      v-for='product in getProductData()',
+      :key='product.name',
+      :name='product.name',
+      :description='product.description',
+      :imageURL='require(`~/static/product-image/${product.image}`)',
+      :coding='product.coding',
+      :appType='product.type',
+      :link='product.url'
+    )
   SectionTitleItem.mt-5.mb-3(jaJp='犠牲となったアプリ', enUs='Legacy')
   .mb-5
     p.text-center(
@@ -59,11 +76,17 @@ export default {
     getLegacySentences() {
       return DATA.product.legacy.sentences
     },
+    getProductSentences() {
+      return DATA.product.products.sentences
+    },
     getWebsiteSentences() {
       return DATA.product.website.sentences
     },
     getWebSiteData() {
       return DATA.website
+    },
+    getProductData() {
+      return DATA.products
     },
     getLegacyData() {
       return DATA.legacy
